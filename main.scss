@@ -1,0 +1,27 @@
+$containerWidth: 940px;
+
+//z-index
+$z-fixed-menu:100;
+
+//colors
+$red: #e01f3d;
+$grey: #f8faf9;
+$black: #292929;
+$red__hover: #ca1b36;
+
+@import "./css/normalize.css";
+@import "./css/components/layout";
+@import "./css/components/hero";
+@import "./css/components/header";
+@import "./css/components/features";
+@import "./css/components/feature__icon";
+@import "./css/components/btn";
+@import "./css/components/section";
+@import "./css/components/benefits";
+@import "./css/components/benefit";
+@import "./css/components/reviews";
+@import "./css/components/interactive-avatar";
+@import "./css/components/order-section";
+@import "./css/components/form";
+@import "./css/components/radio";
+@import "./css/components/fixed-menu";

@@ -1,0 +1,21 @@
+.btn {
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  background-color: $red;
+  padding: 21px 41px;
+  border-radius: 100px;
+  border: none;
+  &:hover {
+    background-color: $red__hover;
+  }
+  &--theme--txtbtn {
+    background-color: transparent;
+    color: #fff;
+    &:hover {
+      color: $red__hover;
+      background-color: transparent;
+    }
+  }
+}
