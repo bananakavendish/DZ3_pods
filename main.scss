@@ -1,13 +1,21 @@
 $containerWidth: 940px;
+$baseFontSize: 16px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
 
 //z-index
-$z-fixed-menu:100;
+$z-fixed-menu: 100;
 
 //colors
 $red: #e01f3d;
 $grey: #f8faf9;
 $black: #292929;
 $red__hover: #ca1b36;
+
+@import "./css/components/media";
+@import "./css/components/hamburger";
 
 @import "./css/normalize.css";
 @import "./css/components/layout";
@@ -24,4 +32,7 @@ $red__hover: #ca1b36;
 @import "./css/components/order-section";
 @import "./css/components/form";
 @import "./css/components/radio";
+@import "./css/components/map";
+@import "./css/components/footer";
+@import "./css/components/social";
 @import "./css/components/fixed-menu";

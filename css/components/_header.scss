@@ -1,29 +1,53 @@
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+}
+.menu {
+  margin: 0 50px;
+  padding-top: 3px;
+  @include tablets {
+    display: none;
+  }
 }
 .menu__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu__link {
+  white-space: nowrap;
 }
 .menu__item {
-  margin-right: 15px;
+  margin-bottom: 10px;
+  margin-right: rem(15px);
   &:last-child {
     margin-right: 0;
   }
 }
+.phone-number.header__phone-number {
+  @include tablets {
+    display: none;
+  }
+}
 .phone-number {
-  font-size: 18px;
+  font-size: rem(18px);
   display: flex;
   align-items: center;
 }
+.phone-number__icon {
+  flex-shrink: 0;
+}
 .phone-number__icon-tel {
-  width: 14px;
-  height: 14px;
-  margin-right: 2px;
+  width: rem(14px);
+  height: rem(14px);
+  margin-right: rem(2px);
+}
+.phone-number__text {
+  white-space: nowrap;
 }
 .logo {
-  width: 40px;
-  height: 40px;
+  width: rem(40px);
+  height: rem(40px);
 }

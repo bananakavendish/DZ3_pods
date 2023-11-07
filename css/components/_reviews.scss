@@ -1,27 +1,45 @@
+.section__reviews {
+  @include phones {
+    min-height: rem(800px);
+  }
+}
 .reviews__display {
   background-color: $grey;
-  padding: 42px;
+  padding: rem(42px);
   overflow: hidden;
   position: relative;
+
   &:before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background: #fff;
     border-radius: 50%;
     position: absolute;
     left: 40%;
     transform: translateX(50%);
-    top: -65px;
+    top: rem(-65px);
+    @include tablets {
+      left: 37%;
+    }
   }
 }
 .reviews__display-inner {
   display: flex;
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 .reviews__avatar {
-  width: 253px;
-  height: 264px;
+  width: rem(253px);
+  height: rem(264px);
+  @include tablets {
+    width: rem(130px);
+    height: rem(130px);
+  }
 }
 .reviews__avatar-img {
   object-fit: cover;
@@ -30,26 +48,33 @@
 }
 .reviews__content {
   flex: 1;
-  margin-left: 40px;
+  margin-left: rem(40px);
+  @include tablets {
+    margin-left: 0;
+  }
 }
 .reviews__title {
-  margin-bottom: 27px;
+  margin-bottom: rem(27px);
 }
 .reviews__text {
-  margin-bottom: 38px;
+  margin-bottom: rem(38px);
   color: #666;
 }
 .reviews__author {
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: bold;
 }
-.circle {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: #868686;
-  z-index: 3;
-  position: absolute;
-  left: 20%;
-  bottom: 0;
+.section__reviews {
+  position: relative;
+  &:before {
+    content: "";
+    width: rem(35px);
+    height: rem(35px);
+    border-radius: 50%;
+    background-color: #868686;
+    z-index: 3;
+    position: absolute;
+    left: 20%;
+    bottom: -1rem;
+  }
 }

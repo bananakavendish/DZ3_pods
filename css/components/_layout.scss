@@ -1,3 +1,6 @@
+html {
+  font-size: $baseFontSize;
+}
 * {
   box-sizing: border-box;
 }
@@ -15,13 +18,16 @@ p {
   font-weight: normal;
 }
 h1 {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: bold;
   text-transform: uppercase;
+  @include phones {
+    font-size: rem(32px);
+  }
 }
 h3 {
   font-weight: bold;
-  font-size: 24px;
+  font-size: rem(24px);
 }
 a {
   color: $black;
@@ -41,13 +47,13 @@ button {
   padding: 0;
 }
 .wrapper {
-  min-width: $containerWidth + 20px;
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 .container {
-  width: $containerWidth;
+  width: 95%;
+  max-width: $containerWidth;
   margin: 0 auto;
 }
 table {

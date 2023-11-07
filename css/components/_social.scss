@@ -1,0 +1,12 @@
+.social__list {
+  display: flex;
+}
+.social__item {
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
+  @include phones {
+    margin-top: 10px;
+  }
+}
