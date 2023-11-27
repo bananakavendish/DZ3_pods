@@ -1,6 +1,7 @@
 .reviews__switcher {
   display: flex;
   justify-content: center;
+  margin-top: rem(15px);
 }
 .interactive-avatar {
   width: rem(74px);
@@ -9,7 +10,6 @@
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  margin-top: rem(15px);
   align-items: center;
   margin-right: rem(6px);
   &--active {

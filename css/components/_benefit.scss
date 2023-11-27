@@ -23,8 +23,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.benefit__title {
+
+.benefit__text {
   margin-top: rem(24px);
+}
+.benefit__title {
   margin-bottom: rem(7px);
   @include phones {
     margin-top: 0;

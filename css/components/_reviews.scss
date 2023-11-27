@@ -17,11 +17,11 @@
     background: #fff;
     border-radius: 50%;
     position: absolute;
-    left: 40%;
-    transform: translateX(50%);
+    left: 50%;
+    transform: translateX(-50%);
     top: rem(-65px);
     @include tablets {
-      left: 37%;
+      left: 50%;
     }
   }
 }

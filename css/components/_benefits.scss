@@ -32,6 +32,9 @@
   @include phones {
     padding: 0;
     margin-bottom: 19px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
   &:before {
     @include tablets {

@@ -15,7 +15,6 @@ $black: #292929;
 $red__hover: #ca1b36;
 
 @import "./css/components/media";
-@import "./css/components/hamburger";
 
 @import "./css/normalize.css";
 @import "./css/components/layout";
@@ -27,6 +26,8 @@ $red__hover: #ca1b36;
 @import "./css/components/section";
 @import "./css/components/benefits";
 @import "./css/components/benefit";
+@import "./css/components/slider";
+@import "./css/components/slider-popup";
 @import "./css/components/reviews";
 @import "./css/components/interactive-avatar";
 @import "./css/components/order-section";
@@ -36,3 +37,4 @@ $red__hover: #ca1b36;
 @import "./css/components/footer";
 @import "./css/components/social";
 @import "./css/components/fixed-menu";
+@import "./css/components/hamburger-menu";
